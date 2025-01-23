@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fdd9cf73-3602-4dc3-a47b-234c9c0d7fbf">
+	<property name="ireport.zoom" value="1.6105100000000026"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="imei" class="java.lang.String"/>
+	<field name="merk_hp" class="java.lang.String"/>
+	<field name="harga" class="java.lang.Integer"/>
+	<field name="storage" class="java.lang.String"/>
+	<field name="no" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="238" y="0" width="100" height="20" uuid="f3db953b-898c-4755-a59d-625c0427fd73"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="43" width="100" height="20" uuid="de6b7920-a3f8-4c7d-b2da-8ad91d51a205"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Cetak]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="141" y="43" width="122" height="20" uuid="70b428b9-e354-417b-8316-aef228fc7390"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="44" y="0" width="39" height="20" uuid="1bc9dde0-7b8f-4ccf-becd-901376351f55"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="0" width="94" height="20" uuid="24ac5fb3-4c9a-4fcb-868e-d59f7e5a85e4"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Hp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="0" width="111" height="20" uuid="a32ef56c-abce-4402-8eec-b148e738ebbc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Imei]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="0" width="126" height="20" uuid="487a07ec-29d4-4880-a1e3-f65399028ed6"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Storage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="99" height="20" uuid="5723c946-5c4c-4926-a69d-e558af198718"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="83" y="0" width="111" height="20" uuid="b346c11c-3a05-4c9e-86ff-cab661080f64"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{imei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="44" y="0" width="39" height="20" uuid="519c092f-b2bb-415e-8374-b23fd7c4cc5f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="414" y="0" width="99" height="20" uuid="4cc10979-5e84-4982-bcf1-d4eb74d9074f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="194" y="0" width="94" height="20" uuid="590814a5-e03d-4701-826f-f48af508b7c8"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{merk_hp}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0">
+				<reportElement x="288" y="0" width="126" height="20" uuid="4648a115-7a69-498a-85ab-f2f68d33a151"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{storage}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<break>
+				<reportElement x="0" y="4" width="100" height="1" uuid="b4f6b1b6-0828-43f1-8788-c07571dcebb6"/>
+			</break>
+			<break>
+				<reportElement x="0" y="34" width="100" height="1" uuid="6d86171c-befe-4343-9a52-8688196e99c3"/>
+			</break>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<break type="Column">
+				<reportElement x="0" y="36" width="100" height="1" uuid="08d6f86d-49b6-4135-bd5c-9805929952a1"/>
+			</break>
+			<textField>
+				<reportElement x="455" y="0" width="58" height="20" uuid="886ae838-da2b-47da-934b-1ee780d2b448"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="513" y="0" width="40" height="20" uuid="eaeed16d-c7ea-415c-8cf5-093374be2f1c"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
